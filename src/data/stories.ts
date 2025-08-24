@@ -79,44 +79,45 @@ export const storiesData: Story[] = [
   },
   {
     id: 'fall-of-man',
-    title: 'The Fall of Man',
+    title: 'The Expulsion of Adam and Eve from Paradise',
     testament: 'old',
     book: 'Genesis',
     chapter: '3',
     sequence: 2,
-    summary: 'Adam and Eve disobey God and are expelled from the Garden of Eden.',
-    narrative: `In the beautiful Garden of Eden, God gave Adam and Eve only one rule: they could eat from any tree except the Tree of the Knowledge of Good and Evil. But a cunning serpent tempted Eve, who ate the forbidden fruit and gave some to Adam. In that moment of disobedience, sin and shame entered the world. When God came to walk with them in the garden, they hid. As a consequence of their choice, God banished them from Eden, and they had to face a new life of hardship, pain, and eventual death. Yet, even in this sad moment, God gave them a promise of future redemption.`,
+    summary: 'After disobeying God, Adam and Eve are guided from Paradise by an angel, beginning humanity\'s journey outside Eden.',
+    narrative: `In the beautiful Garden of Eden, God gave Adam and Eve only one rule: they could eat from any tree except the Tree of the Knowledge of Good and Evil. But a cunning serpent tempted Eve, who ate the forbidden fruit and gave some to Adam. In that moment of disobedience, sin and shame entered the world. When God came to walk with them in the garden, they hid. As a consequence of their choice, God sent an angel to guide them from Paradise. Though they had to leave their perfect home and face a new life of hardship, pain, and eventual death, God in His mercy did not abandon them completely—He gave them clothing to cover their nakedness and a promise of future redemption.`,
     artwork: {
-      title: 'The Expulsion from the Garden of Eden',
-      artist: 'Masaccio',
-      date: 'c. 1426–1427',
-      medium: 'Fresco',
-      location: 'Brancacci Chapel, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/02/Expulsion_from_the_Garden_of_Eden_Masaccio_Cappella_Brancacci.jpg'
+      title: 'The Expulsion of Adam and Eve from Paradise',
+      artist: 'Benjamin West',
+      date: 'c. 1791',
+      medium: 'Oil on canvas',
+      location: 'National Gallery of Art, Washington D.C.',
+      imageUrl: 'https://page.gensparksite.com/v1/base64_upload/06aef84ceed9885dfaeacababc051004'
     },
     curatorInsights: {
-      aboutArt: 'Masaccio\'s fresco brings unprecedented emotional realism to biblical narrative, showing raw human anguish and shame.',
-      aboutArtist: 'Masaccio was a trailblazer of Early Renaissance, breaking from decorative Gothic style to show psychological depth.',
-      historicalContext: 'This work influenced generations of artists with its realistic portrayal of human emotion and dignity.',
-      techniques: ['Early Renaissance realism', 'Emotional expression', 'Foreshortening of the angel', 'Natural lighting'],
-      symbolism: ['Adam covers his face in mental shame', 'Eve covers her body in physical shame', 'Angel\'s sword shows God\'s final judgment']
+      aboutArt: 'West\'s Neoclassical masterpiece captures the expulsion with dramatic grandeur, showing both divine authority and human pathos in perfect balance.',
+      aboutArtist: 'Benjamin West was a pioneering American Neoclassical painter who became president of the Royal Academy in London and influenced a generation of artists.',
+      historicalContext: 'Painted during the Age of Enlightenment, this work reflects Neoclassical ideals of moral instruction through classical beauty and emotional restraint.',
+      techniques: ['Neoclassical composition', 'Dynamic figure placement', 'Chiaroscuro lighting', 'Classical drapery and anatomy'],
+      symbolism: ['Angel\'s white robes represent divine purity', 'Serpent on ground shows the cause of their fall', 'Dark clouds contrast with Eden\'s light', 'Adam\'s covered face shows shame and remorse']
     },
     activities: {
       lookCloser: [
-        'Compare how Adam and Eve show their shame differently',
-        'Find the angel\'s sword - what does it represent?',
-        'Look at their body language as they stumble forward'
+        'See how the angel guides them with authority yet compassion',
+        'Notice the serpent slithering on the ground - the cause of their trouble',
+        'Compare the light of Paradise behind them with the darker world ahead',
+        'Observe how Adam covers his face while Eve looks back longingly'
       ],
-      creativeActivity: 'Use your face and body to show different emotions without words, like Adam and Eve. Try "sad," "ashamed," "scared," and then "hopeful."',
+      creativeActivity: 'West painted this with grand, classical style. Try drawing simple figures in dramatic poses to show strong emotions like sorrow, shame, or guidance.',
       discussionQuestions: [
-        'Talk about a time you made a wrong choice and felt sad. What helped you feel better?',
-        'How does this story show that God still has a plan even when we make mistakes?',
-        'What does it mean to feel ashamed, and how is that different from feeling sorry?'
+        'Even though Adam and Eve had to leave Eden, how does the angel show God\'s continued care?',
+        'Why do you think Adam covers his face while Eve looks back at Paradise?',
+        'How does this painting show both the sadness of leaving home and hope for the future?'
       ],
       digitalFeatures: [
-        'Before/after slider showing the painting with 17th-century fig leaves vs. restored original',
-        'Hotspots explaining the different ways Adam and Eve express shame',
-        'Animation showing their movement away from paradise'
+        'Interactive light and shadow demonstration showing Neoclassical techniques',
+        'Hotspots explaining the symbolic elements like the serpent and clouds',
+        'Animation showing the movement from Paradise to the wider world'
       ]
     }
   },
@@ -393,7 +394,7 @@ export const storiesData: Story[] = [
       date: 'c. 1659',
       medium: 'Oil on canvas',
       location: 'Gemäldegalerie, Berlin',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Rembrandt_-_Jacob_Wrestling_with_the_Angel_-_Google_Art_Project.jpg/800px-Rembrandt_-_Jacob_Wrestling_with_the_Angel_-_Google_Art_Project.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Jakob_ringt_mit_dem_Engel_-_Gem%C3%A4ldegalerie_Berlin_-_5190519.jpg'
     },
     curatorInsights: {
       aboutArt: 'Rembrandt transforms this story of conflict into a tender, intimate embrace, showing the spiritual rather than physical nature of the struggle.',
