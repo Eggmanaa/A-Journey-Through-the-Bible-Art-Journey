@@ -32,18 +32,7 @@ export const NewTestamentGallery = ({ stories }: NewTestamentGalleryProps) => {
         </div>
       </header>
 
-      {/* Progress Bar */}
-      <div className="bg-white shadow-sm">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between text-sm">
-            <span className="text-gray-600">Your Progress</span>
-            <span className="text-biblical-blue font-semibold">0 of {stories.length} stories completed</span>
-          </div>
-          <div className="w-full bg-gray-200 rounded-full h-2 mt-2">
-            <div className="bg-biblical-blue h-2 rounded-full" style="width: 0%"></div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Coming Soon Notice */}
       <section className="py-8 bg-blue-50">
