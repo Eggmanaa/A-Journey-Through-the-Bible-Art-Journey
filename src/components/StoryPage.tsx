@@ -95,8 +95,8 @@ export const StoryPage = ({ story }: StoryPageProps) => {
                   <img 
                     src={story.artwork.imageUrl} 
                     alt={story.artwork.title}
-                    className="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-zoom-in"
-                    onClick="openImageModal(this.src)"
+                    class="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-zoom-in"
+                    onclick={`openImageModal('${story.artwork.imageUrl}', '${story.artwork.title}')`}
                   />
                   <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity">
                     <i className="fas fa-search-plus mr-1"></i>
@@ -264,21 +264,7 @@ export const StoryPage = ({ story }: StoryPageProps) => {
               </div>
             </div>
 
-            {/* Digital Features */}
-            <div className="mt-8 bg-amber-50 rounded-lg p-6">
-              <h3 className="text-xl font-bold text-amber-800 mb-4 flex items-center">
-                <i className="fas fa-laptop mr-2"></i>
-                Digital Features (Coming Soon)
-              </h3>
-              <ul className="space-y-2">
-                {story.activities.digitalFeatures.map((feature, index) => (
-                  <li key={index} className="flex items-start">
-                    <i className="fas fa-magic text-amber-600 mr-2 mt-1 flex-shrink-0"></i>
-                    <span className="text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+
           </section>
 
           {/* Navigation */}
@@ -322,16 +308,61 @@ export const StoryPage = ({ story }: StoryPageProps) => {
         </div>
       </div>
 
-      {/* Image Modal (JavaScript will handle this) */}
-      <div id="imageModal" className="fixed inset-0 bg-black bg-opacity-75 z-50 hidden items-center justify-center p-4">
-        <div className="relative max-w-full max-h-full">
-          <img id="modalImage" src="" alt="" className="max-w-full max-h-full object-contain" />
+      {/* Enhanced Image Modal with Zoom and Pan */}
+      <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center">
+        <div class="relative w-full h-full flex items-center justify-center">
+          {/* Close button */}
           <button 
-            onClick="closeImageModal()" 
-            className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300"
+            onclick="closeImageModal()" 
+            class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300 z-60 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center"
           >
-            <i className="fas fa-times"></i>
+            <i class="fas fa-times"></i>
           </button>
+          
+          {/* Zoom controls */}
+          <div class="absolute top-4 left-4 flex flex-col space-y-2 z-60">
+            <button 
+              onclick="zoomIn()" 
+              class="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-all"
+              title="Zoom In"
+            >
+              <i class="fas fa-plus"></i>
+            </button>
+            <button 
+              onclick="zoomOut()" 
+              class="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-all"
+              title="Zoom Out"
+            >
+              <i class="fas fa-minus"></i>
+            </button>
+            <button 
+              onclick="resetZoom()" 
+              class="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-all"
+              title="Reset View"
+            >
+              <i class="fas fa-expand-arrows-alt"></i>
+            </button>
+          </div>
+          
+          {/* Image container */}
+          <div id="imageContainer" class="w-full h-full overflow-hidden flex items-center justify-center">
+            <img 
+              id="modalImage" 
+              src="" 
+              alt="" 
+              class="max-w-none h-auto cursor-grab transition-transform duration-200 ease-out"
+              style="transform-origin: center center;"
+              draggable="false"
+            />
+          </div>
+          
+          {/* Image info */}
+          <div id="imageInfo" class="absolute bottom-4 left-4 right-4 text-center">
+            <div class="bg-black bg-opacity-50 text-white p-3 rounded-lg">
+              <h3 id="imageTitle" class="font-bold text-lg mb-1"></h3>
+              <p class="text-sm opacity-90">Click and drag to pan • Use zoom controls or mouse wheel • ESC to close</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

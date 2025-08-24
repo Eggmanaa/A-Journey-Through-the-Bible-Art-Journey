@@ -48,8 +48,8 @@ export const storiesData: Story[] = [
       date: 'c. 1508–1512',
       medium: 'Fresco',
       location: 'Sistine Chapel, Vatican City',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-Creation_of_Adam%28Sistine_Chapel_ceiling%29.jpg/1280px-Michelangelo_-Creation_of_Adam%28Sistine_Chapel_ceiling%29.jpg',
-      downloadUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-Creation_of_Adam%28Sistine_Chapel_ceiling%29.jpg/1280px-Michelangelo_-Creation_of_Adam%28Sistine_Chapel_ceiling%29.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Creaci%C3%B3n_de_Ad%C3%A1n.jpg/1280px-Creaci%C3%B3n_de_Ad%C3%A1n.jpg',
+      downloadUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/63/The_Creation_of_Adam.jpg'
     },
     curatorInsights: {
       aboutArt: 'Painted on the ceiling of the Sistine Chapel, this is one of the most iconic images in Western art. Michelangelo presents God as an active, powerful figure rushing through the heavens to impart life.',
@@ -92,7 +92,7 @@ export const storiesData: Story[] = [
       date: 'c. 1426–1427',
       medium: 'Fresco',
       location: 'Brancacci Chapel, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Masaccio-Expulsion_of_Adam_and_Eve-_Brancacci_Chapel2.jpg/800px-Masaccio-Expulsion_of_Adam_and_Eve-_Brancacci_Chapel2.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/02/Expulsion_from_the_Garden_of_Eden_Masaccio_Cappella_Brancacci.jpg'
     },
     curatorInsights: {
       aboutArt: 'Masaccio\'s fresco brings unprecedented emotional realism to biblical narrative, showing raw human anguish and shame.',
@@ -221,7 +221,7 @@ export const storiesData: Story[] = [
       date: '1659',
       medium: 'Oil on canvas',
       location: 'Gemäldegalerie, Berlin',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Rembrandt_-Moses_with_the_Ten_Commandments-_Google_Art_Project.jpg/800px-Rembrandt_-Moses_with_the_Ten_Commandments-_Google_Art_Project.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Rembrandt_-_Moses_with_the_Ten_Commandments_-_Google_Art_Project.jpg'
     },
     curatorInsights: {
       aboutArt: 'Rembrandt captures Moses in righteous anger, about to smash the tablets after seeing the people worship the golden calf.',
@@ -264,7 +264,7 @@ export const storiesData: Story[] = [
       date: 'c. 1610',
       medium: 'Oil on canvas',
       location: 'Galleria Borghese, Rome',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/David_with_the_Head_of_Goliath_by_Caravaggio.jpg/800px-David_with_the_Head_of_Goliath_by_Caravaggio.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/David_with_the_Head_of_Goliath-Caravaggio_%281610%29.jpg'
     },
     curatorInsights: {
       aboutArt: 'Caravaggio shows the aftermath rather than the battle, focusing on David\'s complex emotions after his victory.',
