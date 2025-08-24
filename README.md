@@ -12,7 +12,7 @@
   - ✅ Enhanced image modals with zoom/pan capabilities and mobile touch support
 
 ## Live URLs
-- **Development**: [https://3000-i5k36yzzgc52lrs6if6gy-6532622b.e2b.dev](https://3000-isc8rduvhoulmgqdnt6ql-6532622b.e2b.dev/old-testament)
+- **Development**: https://3000-isc8rduvhoulmgqdnt6ql-6532622b.e2b.dev
 - **Production**: TBD (Cloudflare Pages deployment ready)
 - **GitHub**: TBD (GitHub repository setup ready)
 
