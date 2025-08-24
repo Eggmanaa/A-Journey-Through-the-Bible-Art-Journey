@@ -20,7 +20,7 @@
 
 ### 🔥 OLD TESTAMENT STORIES (13 Complete)
 1. **The Creation of Adam** - Michelangelo (Genesis 1-2, Sequence 1)
-2. **The Fall of Man** - Masaccio (Genesis 3, Sequence 2)  
+2. **The Expulsion of Adam and Eve from Paradise** - Benjamin West (Genesis 3, Sequence 2)  
 3. **Cain Kills Abel** - Titian (1 Samuel 4, Sequence 3)
 4. **The Great Flood & Noah's Ark** - Edward Hicks (Genesis 6-9, Sequence 4)
 5. **The Tower of Babel** - Pieter Bruegel the Elder (Genesis 11, Sequence 5)
