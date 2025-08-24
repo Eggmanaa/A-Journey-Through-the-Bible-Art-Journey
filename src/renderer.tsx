@@ -22,29 +22,31 @@ export const renderer = jsxRenderer(({ children, title }) => {
         <link href="/static/style.css" rel="stylesheet" />
         
         {/* Custom Tailwind Config */}
-        <script>
-          tailwind.config = {
-            theme: {
-              extend: {
-                colors: {
-                  biblical: {
-                    gold: '#D4AF37',
-                    purple: '#6B46C1',
-                    blue: '#1E40AF',
-                    green: '#059669',
-                    red: '#DC2626'
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    biblical: {
+                      gold: '#D4AF37',
+                      purple: '#6B46C1',
+                      blue: '#1E40AF',
+                      green: '#059669',
+                      red: '#DC2626'
+                    }
+                  },
+                  fontFamily: {
+                    'serif': ['Georgia', 'serif'],
+                    'biblical': ['Cinzel', 'serif']
                   }
-                },
-                fontFamily: {
-                  'serif': ['Georgia', 'serif'],
-                  'biblical': ['Cinzel', 'serif']
                 }
               }
             }
-          }
-        </script>
+          `
+        }} />
       </head>
-      <body className="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
+      <body class="bg-gradient-to-br from-blue-50 to-purple-50 min-h-screen">
         <div id="app">{children}</div>
         
         {/* Main JavaScript */}
