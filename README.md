@@ -12,9 +12,10 @@
   - ✅ Enhanced image modals with zoom/pan capabilities and mobile touch support
 
 ## Live URLs
+- **Production**: https://biblical-art-journey.pages.dev 🌍
+- **Branch URL**: https://57d5ae69.biblical-art-journey.pages.dev
 - **Development**: https://3000-i5k36yzzgc52lrs6if6gy-6532622b.e2b.dev
-- **Production**: TBD (Cloudflare Pages deployment ready)
-- **GitHub**: TBD (GitHub repository setup ready)
+- **GitHub**: https://github.com/Eggmanaa/A-Journey-Through-the-Bible-Art-Journey 📚
 
 ## Complete Story Collection (30 Stories) ✅
 
@@ -185,6 +186,6 @@
 
 **Last Updated**: August 2024  
 **Version**: 2.0.0 - Complete Collection (30 Stories)  
-**Status**: 🎉 **FULLY COMPLETE** - All 30 biblical stories implemented, tested, and ready for production deployment!
+**Status**: 🌍 **LIVE & DEPLOYED** - All 30 biblical stories fully implemented and deployed to production!
 
-**Ready for**: Immediate Cloudflare Pages deployment and public launch 🚀
+**Live at**: https://biblical-art-journey.pages.dev 🚀✨
