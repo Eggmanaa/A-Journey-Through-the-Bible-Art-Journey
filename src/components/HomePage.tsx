@@ -145,7 +145,7 @@ export const HomePage = () => {
                 <div class="absolute inset-0 bg-black/10"></div>
                 <i class="fas fa-scroll text-white text-7xl group-hover:scale-125 transition-transform duration-500 relative z-10 drop-shadow-lg"></i>
                 <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm font-semibold">
-                  6 Stories Ready
+                  13 Stories Ready
                 </div>
               </div>
               <div class="p-8">
@@ -170,7 +170,7 @@ export const HomePage = () => {
                 <div class="absolute inset-0 bg-black/10"></div>
                 <i class="fas fa-cross text-white text-7xl group-hover:scale-125 transition-transform duration-500 relative z-10 drop-shadow-lg"></i>
                 <div class="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 py-1 text-white text-sm font-semibold">
-                  Coming Soon
+                  17 Stories Ready
                 </div>
               </div>
               <div class="p-8">
@@ -180,7 +180,7 @@ export const HomePage = () => {
                   salvation, and the greatest love story ever told.
                 </p>
                 <div class="flex items-center text-biblical-blue font-bold text-lg">
-                  <span>Preview Gallery</span>
+                  <span>Enter the Gallery</span>
                   <i class="fas fa-arrow-right ml-3 group-hover:translate-x-2 transition-transform duration-300"></i>
                 </div>
               </div>
@@ -244,8 +244,8 @@ export const HomePage = () => {
         <div class="container mx-auto px-6 text-center relative z-10">
           <h2 class="text-5xl font-bold mb-8 font-biblical">Ready to Begin the Journey?</h2>
           <p class="text-2xl mb-12 max-w-3xl mx-auto opacity-90 leading-relaxed">
-            Start with the Old Testament to follow the chronological story through 
-            6 beautifully crafted interactive experiences.
+            Begin your journey through all 30 biblical stories from Creation to the New Heaven and Earth—
+            beautifully crafted interactive experiences are now complete.
           </p>
           <div class="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
@@ -259,8 +259,8 @@ export const HomePage = () => {
               href="/new-testament" 
               class="inline-block border-2 border-white text-white hover:bg-white hover:text-biblical-purple px-10 py-5 rounded-lg font-bold text-xl transition-all duration-300 shadow-xl"
             >
-              Preview New Testament
-              <i class="fas fa-arrow-right ml-3"></i>
+              <i class="fas fa-cross mr-3"></i>
+              Explore New Testament
             </a>
           </div>
         </div>
