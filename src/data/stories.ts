@@ -740,7 +740,7 @@ export const storiesData: Story[] = [
       date: 'c. 1472–1475',
       medium: 'Oil and tempera on wood',
       location: 'Uffizi Gallery, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/The_Baptism_of_Christ_%28Verrocchio_%26_Leonardo%29.jpg/800px-The_Baptism_of_Christ_%28Verrocchio_%26_Leonardo%29.jpg'
+      imageUrl: 'https://page.gensparksite.com/v1/base64_upload/4eeb073a8b88511d01499e7af2218f0f'
     },
     curatorInsights: {
       aboutArt: 'This famous collaboration shows young Leonardo\'s hand in the left angel and landscape, demonstrating his emerging genius.',
@@ -869,7 +869,7 @@ export const storiesData: Story[] = [
       date: 'c. 1550',
       medium: 'Oil on wood',
       location: 'Royal Museums of Fine Arts, Brussels',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Brooklynmuseum_-_The_Miracle_of_the_Loaves_and_Fishes_-_James_Tissot_-_overall.jpg'
+      imageUrl: 'https://page.gensparksite.com/v1/base64_upload/ee6c15cbad545c4a6c8e1cf233a9775e'
     },
     curatorInsights: {
       aboutArt: 'Lombard depicts the moment of distribution, showing Jesus\' disciples sharing the miraculously multiplied food with the amazed crowd.',
@@ -955,7 +955,7 @@ export const storiesData: Story[] = [
       date: 'c. 1620',
       medium: 'Oil on canvas',
       location: 'Metropolitan Museum of Art, New York',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Pietro_Lorenzetti_001.jpg'
+      imageUrl: 'https://page.gensparksite.com/v1/base64_upload/b30a3d4b0e3eaa0b090cc86adb015a14'
     },
     curatorInsights: {
       aboutArt: 'Orrente captures the joyful celebration while hinting at the tragedy to come, showing both triumph and humility.',
@@ -1084,7 +1084,7 @@ export const storiesData: Story[] = [
       date: 'c. 1463–1465',
       medium: 'Fresco',
       location: 'Museo Civico, Sansepolcro',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Piero_della_Francesca_-_Resurrection_-_WGA17609.jpg'
+      imageUrl: 'https://page.gensparksite.com/v1/base64_upload/6599caa5075701879b4ce0014778f5f1'
     },
     curatorInsights: {
       aboutArt: 'Piero\'s masterpiece shows Christ triumphant, stepping from the tomb while Roman soldiers sleep, representing victory over death.',
@@ -1127,7 +1127,7 @@ export const storiesData: Story[] = [
       date: '1601',
       medium: 'Oil on canvas',
       location: 'National Gallery, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/Caravaggio_-_Supper_in_Emmaus.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/1602-3_Caravaggio%2CSupper_at_Emmaus_National_Gallery%2C_London.jpg'
     },
     curatorInsights: {
       aboutArt: 'Caravaggio captures the exact moment of recognition, with dramatic gestures and expressions showing the disciples\' amazement.',
@@ -1170,7 +1170,7 @@ export const storiesData: Story[] = [
       date: '1515–1516',
       medium: 'Tempera on paper, transferred to canvas',
       location: 'Victoria and Albert Museum, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Raphael_-_Christ%27s_Charge_to_Peter.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Raffael_009.jpg'
     },
     curatorInsights: {
       aboutArt: 'Raphael\'s cartoon for the Sistine Chapel tapestries shows Jesus commissioning Peter with divine authority and human tenderness.',
@@ -1213,7 +1213,7 @@ export const storiesData: Story[] = [
       date: 'c. 1460',
       medium: 'Tempera on wood',
       location: 'Uffizi Gallery, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Andrea_Mantegna_012.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Andrea_Mantegna_-_The_Ascension_-_WGA13984.jpg'
     },
     curatorInsights: {
       aboutArt: 'Mantegna uses dramatic foreshortening to show Christ ascending, with disciples gazing upward in wonder and loss.',
@@ -1299,7 +1299,7 @@ export const storiesData: Story[] = [
       date: '1866',
       medium: 'Engraving',
       location: 'Various collections',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Gustave_Dor%C3%A9_-_The_New_Jerusalem_-_Google_Art_Project.jpg'
+      imageUrl: 'https://page.gensparksite.com/v1/base64_upload/b95902e7718539a596dd81a7e70b04ca'
     },
     curatorInsights: {
       aboutArt: 'Doré\'s magnificent engraving captures the grandeur and perfection of God\'s eternal kingdom with architectural splendor and divine light.',
