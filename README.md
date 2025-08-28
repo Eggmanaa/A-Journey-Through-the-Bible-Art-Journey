@@ -14,6 +14,7 @@
 
 ## Live URLs
 - **Production**: https://biblical-art-journey.pages.dev 🌍
+- **Last Updated**: August 28, 2025 - All images fixed and working
 - **Branch URL**: https://57d5ae69.biblical-art-journey.pages.dev
 - **Development**: https://3000-i5k36yzzgc52lrs6if6gy-6532622b.e2b.dev
 - **GitHub**: https://github.com/Eggmanaa/A-Journey-Through-the-Bible-Art-Journey 📚
