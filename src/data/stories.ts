@@ -1170,7 +1170,7 @@ export const storiesData: Story[] = [
       date: '1515–1516',
       medium: 'Tempera on paper, transferred to canvas',
       location: 'Victoria and Albert Museum, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Raffael_009.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/69/V%26A_-_Raphael%2C_Christ%27s_Charge_to_Peter_%281515%29.jpg'
     },
     curatorInsights: {
       aboutArt: 'Raphael\'s cartoon for the Sistine Chapel tapestries shows Jesus commissioning Peter with divine authority and human tenderness.',
@@ -1213,7 +1213,7 @@ export const storiesData: Story[] = [
       date: 'c. 1460',
       medium: 'Tempera on wood',
       location: 'Uffizi Gallery, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Andrea_Mantegna_-_The_Ascension_-_WGA13984.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Andrea_Mantegna_-_The_Ascension_of_Christ_-_WGA13956.jpg'
     },
     curatorInsights: {
       aboutArt: 'Mantegna uses dramatic foreshortening to show Christ ascending, with disciples gazing upward in wonder and loss.',
