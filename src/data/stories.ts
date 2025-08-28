@@ -740,7 +740,7 @@ export const storiesData: Story[] = [
       date: 'c. 1472–1475',
       medium: 'Oil and tempera on wood',
       location: 'Uffizi Gallery, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/The_Baptism_of_Christ_%28Verrocchio_%26_Leonardo%29.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/The_Baptism_of_Christ_%28Verrocchio_%26_Leonardo%29.jpg/800px-The_Baptism_of_Christ_%28Verrocchio_%26_Leonardo%29.jpg'
     },
     curatorInsights: {
       aboutArt: 'This famous collaboration shows young Leonardo\'s hand in the left angel and landscape, demonstrating his emerging genius.',
@@ -783,7 +783,7 @@ export const storiesData: Story[] = [
       date: '1603–1606',
       medium: 'Oil on canvas',
       location: 'Hampton Court Palace, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg/800px-The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/Caravaggio%2C_Michelangelo_Merisi_da_-_The_Calling_of_Saint_Matthew_-_1599-1600_%28hi_res%29.jpg'
     },
     curatorInsights: {
       aboutArt: 'Caravaggio revolutionized religious art by depicting biblical figures as ordinary people in contemporary settings.',
@@ -869,7 +869,7 @@ export const storiesData: Story[] = [
       date: 'c. 1550',
       medium: 'Oil on wood',
       location: 'Royal Museums of Fine Arts, Brussels',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Brooklynmuseum_-_The_Miracle_of_the_Loaves_and_Fishes_-_James_Tissot_-_overall.jpg/800px-Brooklynmuseum_-_The_Miracle_of_the_Loaves_and_Fishes_-_James_Tissot_-_overall.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Brooklynmuseum_-_The_Miracle_of_the_Loaves_and_Fishes_-_James_Tissot_-_overall.jpg'
     },
     curatorInsights: {
       aboutArt: 'Lombard depicts the moment of distribution, showing Jesus\' disciples sharing the miraculously multiplied food with the amazed crowd.',
@@ -955,7 +955,7 @@ export const storiesData: Story[] = [
       date: 'c. 1620',
       medium: 'Oil on canvas',
       location: 'Metropolitan Museum of Art, New York',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Pietro_Lorenzetti_001.jpg/800px-Pietro_Lorenzetti_001.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Pietro_Lorenzetti_001.jpg'
     },
     curatorInsights: {
       aboutArt: 'Orrente captures the joyful celebration while hinting at the tragedy to come, showing both triumph and humility.',
@@ -1084,7 +1084,7 @@ export const storiesData: Story[] = [
       date: 'c. 1463–1465',
       medium: 'Fresco',
       location: 'Museo Civico, Sansepolcro',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Piero_della_Francesca_-_Resurrection_-_WGA17609.jpg/800px-Piero_della_Francesca_-_Resurrection_-_WGA17609.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Piero_della_Francesca_-_Resurrection_-_WGA17609.jpg'
     },
     curatorInsights: {
       aboutArt: 'Piero\'s masterpiece shows Christ triumphant, stepping from the tomb while Roman soldiers sleep, representing victory over death.',
@@ -1127,7 +1127,7 @@ export const storiesData: Story[] = [
       date: '1601',
       medium: 'Oil on canvas',
       location: 'National Gallery, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Caravaggio_-_Supper_in_Emmaus.jpg/800px-Caravaggio_-_Supper_in_Emmaus.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/Caravaggio_-_Supper_in_Emmaus.jpg'
     },
     curatorInsights: {
       aboutArt: 'Caravaggio captures the exact moment of recognition, with dramatic gestures and expressions showing the disciples\' amazement.',
@@ -1170,7 +1170,7 @@ export const storiesData: Story[] = [
       date: '1515–1516',
       medium: 'Tempera on paper, transferred to canvas',
       location: 'Victoria and Albert Museum, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Raphael_-_Christ%27s_Charge_to_Peter.jpg/800px-Raphael_-_Christ%27s_Charge_to_Peter.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Raphael_-_Christ%27s_Charge_to_Peter.jpg'
     },
     curatorInsights: {
       aboutArt: 'Raphael\'s cartoon for the Sistine Chapel tapestries shows Jesus commissioning Peter with divine authority and human tenderness.',
@@ -1213,7 +1213,7 @@ export const storiesData: Story[] = [
       date: 'c. 1460',
       medium: 'Tempera on wood',
       location: 'Uffizi Gallery, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Andrea_Mantegna_012.jpg/800px-Andrea_Mantegna_012.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Andrea_Mantegna_012.jpg'
     },
     curatorInsights: {
       aboutArt: 'Mantegna uses dramatic foreshortening to show Christ ascending, with disciples gazing upward in wonder and loss.',
@@ -1299,7 +1299,7 @@ export const storiesData: Story[] = [
       date: '1866',
       medium: 'Engraving',
       location: 'Various collections',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gustave_Dor%C3%A9_-_The_New_Jerusalem_-_Google_Art_Project.jpg/800px-Gustave_Dor%C3%A9_-_The_New_Jerusalem_-_Google_Art_Project.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c5/Gustave_Dor%C3%A9_-_The_New_Jerusalem_-_Google_Art_Project.jpg'
     },
     curatorInsights: {
       aboutArt: 'Doré\'s magnificent engraving captures the grandeur and perfection of God\'s eternal kingdom with architectural splendor and divine light.',
