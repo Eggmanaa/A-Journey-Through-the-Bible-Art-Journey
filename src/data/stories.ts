@@ -654,7 +654,7 @@ export const storiesData: Story[] = [
       date: '1622',
       medium: 'Oil on canvas',
       location: 'Wallraf-Richartz Museum, Cologne',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/74/Gerard_van_Honthorst_-_Adoration_of_the_Shepherds_%281622%29.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Gerard_van_Honthorst_-_Adoration_of_the_Shepherds_%281622%29.jpg'
     },
     curatorInsights: {
       aboutArt: 'Honthorst was famous for his candlelit night scenes, earning him the nickname "Gherardo delle Notti" (Gerard of the Nights).',
@@ -697,7 +697,7 @@ export const storiesData: Story[] = [
       date: 'c. 1540',
       medium: 'Oil on wood',
       location: 'Royal Museums of Fine Arts, Brussels',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Ambrosius_Benson_-_The_Presentation_in_the_Temple_-_Google_Art_Project.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Ambrosius_Benson_-_The_Presentation_in_the_Temple.jpg'
     },
     curatorInsights: {
       aboutArt: 'Benson\'s painting captures the intimate moment of recognition between the aged Simeon and the infant Jesus in a detailed temple setting.',
@@ -740,7 +740,7 @@ export const storiesData: Story[] = [
       date: 'c. 1472–1475',
       medium: 'Oil and tempera on wood',
       location: 'Uffizi Gallery, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Andrea_del_Verrocchio%2C_Leonardo_da_Vinci_-_Baptism_of_Christ_-_Uffizi.jpg/800px-Andrea_del_Verrocchio%2C_Leonardo_da_Vinci_-_Baptism_of_Christ_-_Uffizi.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Andrea_del_Verrocchio_-_Baptism_of_Christ_%28Uffizi%29.jpg'
     },
     curatorInsights: {
       aboutArt: 'This famous collaboration shows young Leonardo\'s hand in the left angel and landscape, demonstrating his emerging genius.',
@@ -783,7 +783,7 @@ export const storiesData: Story[] = [
       date: '1603–1606',
       medium: 'Oil on canvas',
       location: 'Hampton Court Palace, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Caravaggio_-_The_Calling_of_Saint_Matthew.jpg/800px-Caravaggio_-_The_Calling_of_Saint_Matthew.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ce/The_Calling_of_Saint_Matthew-Caravaggo_%281599-1600%29.jpg'
     },
     curatorInsights: {
       aboutArt: 'Caravaggio revolutionized religious art by depicting biblical figures as ordinary people in contemporary settings.',
@@ -826,7 +826,7 @@ export const storiesData: Story[] = [
       date: '1877',
       medium: 'Oil on canvas',
       location: 'Chapel at Frederiksborg Castle, Denmark',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Carl_Bloch_-_Sermon_on_the_Mount.jpg/800px-Carl_Bloch_-_Sermon_on_the_Mount.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Bloch-SermonOnTheMount.jpg/960px-Bloch-SermonOnTheMount.jpg'
     },
     curatorInsights: {
       aboutArt: 'Bloch\'s painting captures the gentle authority of Jesus teaching, with crowds gathered on a hillside in rapt attention.',
@@ -869,7 +869,7 @@ export const storiesData: Story[] = [
       date: 'c. 1550',
       medium: 'Oil on wood',
       location: 'Royal Museums of Fine Arts, Brussels',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lambert_Lombard_-_The_Miracle_of_the_Loaves_and_Fishes_-_Google_Art_Project.jpg/800px-Lambert_Lombard_-_The_Miracle_of_the_Loaves_and_Fishes_-_Google_Art_Project.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Lambert_Lombard_001.jpg'
     },
     curatorInsights: {
       aboutArt: 'Lombard depicts the moment of distribution, showing Jesus\' disciples sharing the miraculously multiplied food with the amazed crowd.',
@@ -912,7 +912,7 @@ export const storiesData: Story[] = [
       date: '1516–1520',
       medium: 'Oil on wood',
       location: 'Vatican Museums, Vatican City',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Raphael_-_Transfiguration_-_Google_Art_Project.jpg/800px-Raphael_-_Transfiguration_-_Google_Art_Project.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/51/Transfiguration_Raphael.jpg'
     },
     curatorInsights: {
       aboutArt: 'Raphael\'s final masterpiece brilliantly contrasts the divine transfiguration above with earthly struggle below.',
@@ -955,7 +955,7 @@ export const storiesData: Story[] = [
       date: 'c. 1620',
       medium: 'Oil on canvas',
       location: 'Metropolitan Museum of Art, New York',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Pedro_Orrente_-_Entry_of_Christ_into_Jerusalem_-_Google_Art_Project.jpg/800px-Pedro_Orrente_-_Entry_of_Christ_into_Jerusalem_-_Google_Art_Project.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/Pietro_Lorenzetti_001.jpg'
     },
     curatorInsights: {
       aboutArt: 'Orrente captures the joyful celebration while hinting at the tragedy to come, showing both triumph and humility.',
@@ -1041,7 +1041,7 @@ export const storiesData: Story[] = [
       date: 'c. 1632',
       medium: 'Oil on canvas',
       location: 'Prado Museum, Madrid',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Creaci%C3%B3n_de_Ad%C3%A1n.jpg/1280px-Creaci%C3%B3n_de_Ad%C3%A1n.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Cristo_crucificado.jpg'
     },
     curatorInsights: {
       aboutArt: 'Velázquez presents Christ with dignity and serenity, avoiding graphic suffering to focus on the sacred sacrifice.',
@@ -1084,7 +1084,7 @@ export const storiesData: Story[] = [
       date: 'c. 1463–1465',
       medium: 'Fresco',
       location: 'Museo Civico, Sansepolcro',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Piero_della_Francesca_-_Resurrection_-_WGA17609.jpg/800px-Piero_della_Francesca_-_Resurrection_-_WGA17609.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/73/Piero_della_Francesca_-_Resurrection.jpg'
     },
     curatorInsights: {
       aboutArt: 'Piero\'s masterpiece shows Christ triumphant, stepping from the tomb while Roman soldiers sleep, representing victory over death.',
@@ -1127,7 +1127,7 @@ export const storiesData: Story[] = [
       date: '1601',
       medium: 'Oil on canvas',
       location: 'National Gallery, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Caravaggio_-_Supper_at_Emmaus_-_London_-_1601.jpg/800px-Caravaggio_-_Supper_at_Emmaus_-_London_-_1601.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4d/Caravaggio_Supper_at_Emmaus.jpg'
     },
     curatorInsights: {
       aboutArt: 'Caravaggio captures the exact moment of recognition, with dramatic gestures and expressions showing the disciples\' amazement.',
@@ -1170,7 +1170,7 @@ export const storiesData: Story[] = [
       date: '1515–1516',
       medium: 'Tempera on paper, transferred to canvas',
       location: 'Victoria and Albert Museum, London',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Raffael_009.jpg/800px-Raffael_009.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/V%26A_-_Raphael%2C_Christ%27s_Charge_to_Peter_%281515%29.jpg'
     },
     curatorInsights: {
       aboutArt: 'Raphael\'s cartoon for the Sistine Chapel tapestries shows Jesus commissioning Peter with divine authority and human tenderness.',
@@ -1213,7 +1213,7 @@ export const storiesData: Story[] = [
       date: 'c. 1460',
       medium: 'Tempera on wood',
       location: 'Uffizi Gallery, Florence',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Andrea_Mantegna_-_The_Ascension_-_WGA13984.jpg/800px-Andrea_Mantegna_-_The_Ascension_-_WGA13984.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Andrea_Mantegna_012.jpg'
     },
     curatorInsights: {
       aboutArt: 'Mantegna uses dramatic foreshortening to show Christ ascending, with disciples gazing upward in wonder and loss.',
@@ -1299,7 +1299,7 @@ export const storiesData: Story[] = [
       date: '1866',
       medium: 'Engraving',
       location: 'Various collections',
-      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gustave_Dor%C3%A9_-_The_New_Jerusalem.jpg/800px-Gustave_Dor%C3%A9_-_The_New_Jerusalem.jpg'
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/72/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'
     },
     curatorInsights: {
       aboutArt: 'Doré\'s magnificent engraving captures the grandeur and perfection of God\'s eternal kingdom with architectural splendor and divine light.',
