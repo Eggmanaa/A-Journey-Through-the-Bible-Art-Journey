@@ -34,79 +34,75 @@ export const NewTestamentGallery = ({ stories }: NewTestamentGalleryProps) => {
         </div>
       </header>
 
-
-
-      {/* Story Statistics */}
-      <section className="py-8 bg-gradient-to-b from-blue-50 to-white">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              New Testament Collection
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Experience the life of Jesus Christ and the birth of the early Church through 17 masterpieces
-              by Leonardo da Vinci, Raphael, Caravaggio, and other Renaissance masters.
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-biblical-blue">
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="text-3xl font-bold text-biblical-blue mb-2">17</div>
-                <div className="text-gray-600">New Testament Stories</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-biblical-purple mb-2">12+</div>
-                <div className="text-gray-600">Master Artists</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-biblical-gold mb-2">100%</div>
-                <div className="text-gray-600">Interactive</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* New Testament Stories Grid */}
       <section className="py-12 bg-gradient-to-b from-white to-blue-50">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {newTestamentStories.map((story) => (
-              <a
+            {newTestamentStories.map((story, index) => (
+              <a 
                 key={story.id}
-                href={`/story/${story.id}`}
-                className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
+                href={`/story/${story.id}`} 
+                className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2"
               >
-                <div className="aspect-w-16 aspect-h-12 bg-gray-200">
-                  <img
-                    src={story.artwork.imageUrl}
-                    alt={`${story.artwork.title} by ${story.artwork.artist}`}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
-                    loading="lazy"
+                {/* Story Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={story.artwork.imageUrl} 
+                    alt={story.artwork.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
+                  <div className="absolute top-4 left-4 bg-biblical-blue text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">
+                    {story.sequence}
+                  </div>
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
                 </div>
+
+                {/* Story Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-biblical-blue transition-colors">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-semibold text-biblical-blue bg-blue-100 px-2 py-1 rounded">
+                      {story.book} {story.chapter}
+                    </span>
+                    <div className="flex items-center text-gray-400">
+                      <i className="fas fa-clock mr-1 text-xs"></i>
+                      <span className="text-xs">5-10 min</span>
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-biblical-blue transition-colors">
                     {story.title}
                   </h3>
-                  <p className="text-biblical-purple font-semibold mb-2">
-                    {story.artwork.artist}
-                  </p>
-                  <p className="text-gray-600 text-sm mb-3">
-                    {story.book} {story.chapter}
-                  </p>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                  
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                     {story.summary}
                   </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs text-gray-500">
-                      {story.artwork.date}
-                    </span>
-                    <div className="flex items-center text-biblical-blue font-semibold">
-                      <span className="text-sm">Explore Story</span>
-                      <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+
+                  {/* Artwork Info */}
+                  <div className="border-t pt-4">
+                    <p className="text-xs text-gray-500 mb-1">Featured Artwork:</p>
+                    <p className="text-sm font-medium text-gray-700">
+                      "{story.artwork.title}" by {story.artwork.artist}
+                    </p>
+                    <p className="text-xs text-gray-500">{story.artwork.date}</p>
+                  </div>
+
+                  {/* Interactive Elements Indicator */}
+                  <div className="flex items-center justify-between mt-4 pt-4 border-t">
+                    <div className="flex space-x-2">
+                      <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded flex items-center">
+                        <i className="fas fa-expand mr-1"></i>
+                        View
+                      </span>
+                      <span className="text-xs bg-green-100 text-green-600 px-2 py-1 rounded flex items-center">
+                        <i className="fas fa-palette mr-1"></i>
+                        Activity
+                      </span>
+                      <span className="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded flex items-center">
+                        <i className="fas fa-comments mr-1"></i>
+                        Discuss
+                      </span>
                     </div>
+                    <i className="fas fa-arrow-right text-biblical-blue group-hover:translate-x-1 transition-transform"></i>
                   </div>
                 </div>
               </a>
@@ -115,20 +111,20 @@ export const NewTestamentGallery = ({ stories }: NewTestamentGalleryProps) => {
         </div>
       </section>
 
-      {/* Explore Old Testament CTA */}
+      {/* Navigation to Old Testament */}
       <section className="py-12 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Start Your Journey with the Old Testament</h2>
+          <h2 className="text-3xl font-bold mb-4">Explore the Foundations of Faith</h2>
           <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-            While we prepare the New Testament stories, begin your biblical art journey 
-            with the foundations of faith. Explore Creation, Noah's Ark, Moses, David, and more!
+            Continue your journey with the Old Testament stories. 
+            Discover Creation, Noah's Ark, Moses, David, and the foundations that led to Christ's coming.
           </p>
           <a 
             href="/old-testament" 
             className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition-colors"
           >
             <i className="fas fa-scroll mr-2"></i>
-            Explore Old Testament Stories
+            Explore Old Testament Gallery
           </a>
         </div>
       </section>

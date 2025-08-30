@@ -110,7 +110,9 @@ export const HomePage = () => {
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Creaci%C3%B3n_de_Ad%C3%A1n.jpg/800px-Creaci%C3%B3n_de_Ad%C3%A1n.jpg" 
                   alt="The Creation of Adam by Michelangelo"
-                  class="rounded-xl shadow-2xl max-w-full h-auto transform hover:scale-105 transition-transform duration-500"
+                  class="rounded-xl shadow-2xl max-w-full h-auto transform hover:scale-105 transition-transform duration-500 cursor-pointer"
+                  data-artwork="true"
+                  onclick="openImageModal(this.src, this.alt)"
                 />
                 <div class="absolute -bottom-4 -right-4 bg-biblical-gold text-white p-4 rounded-full shadow-xl">
                   <i class="fas fa-expand text-2xl"></i>
@@ -302,6 +304,37 @@ export const HomePage = () => {
           </div>
         </div>
       </footer>
+
+      {/* Simple Fullscreen Image Modal */}
+      <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center">
+        <div class="relative w-full h-full flex items-center justify-center">
+          {/* Close button */}
+          <button 
+            onclick="closeImageModal()" 
+            class="absolute top-4 right-4 text-white text-3xl hover:text-gray-300 z-60 bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          
+          {/* Image container */}
+          <div id="imageContainer" class="w-full h-full flex items-center justify-center p-8">
+            <img 
+              id="modalImage" 
+              src="" 
+              alt="" 
+              class="max-w-full max-h-full object-contain"
+            />
+          </div>
+          
+          {/* Image info */}
+          <div id="imageInfo" class="absolute bottom-4 left-4 right-4 text-center">
+            <div class="bg-black bg-opacity-50 text-white p-3 rounded-lg">
+              <h3 id="imageTitle" class="font-bold text-lg mb-1"></h3>
+              <p class="text-sm opacity-90">Press ESC to close</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
