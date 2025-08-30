@@ -1,10 +1,12 @@
-import { Story } from '../data/stories'
+import { Story, getStoriesByTestament } from '../data/stories'
 
 interface NewTestamentGalleryProps {
   stories: Story[]
 }
 
 export const NewTestamentGallery = ({ stories }: NewTestamentGalleryProps) => {
+  const newTestamentStories = getStoriesByTestament('new')
+  
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -34,110 +36,80 @@ export const NewTestamentGallery = ({ stories }: NewTestamentGalleryProps) => {
 
 
 
-      {/* Coming Soon Notice */}
-      <section className="py-8 bg-blue-50">
+      {/* Story Statistics */}
+      <section className="py-8 bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              New Testament Collection
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Experience the life of Jesus Christ and the birth of the early Church through 17 masterpieces
+              by Leonardo da Vinci, Raphael, Caravaggio, and other Renaissance masters.
+            </p>
+          </div>
+          
           <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-biblical-blue">
-            <div className="flex items-center">
-              <i className="fas fa-info-circle text-biblical-blue text-2xl mr-4"></i>
+            <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
-                <h3 className="text-lg font-bold text-gray-800 mb-2">New Testament Stories Coming Soon!</h3>
-                <p className="text-gray-600">
-                  The New Testament gallery featuring Jesus' life, ministry, crucifixion, resurrection, 
-                  and the early Church is currently being prepared. These 17+ stories will include 
-                  masterpieces from Leonardo da Vinci, Raphael, and other Renaissance masters.
-                </p>
+                <div className="text-3xl font-bold text-biblical-blue mb-2">17</div>
+                <div className="text-gray-600">New Testament Stories</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-biblical-purple mb-2">12+</div>
+                <div className="text-gray-600">Master Artists</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-biblical-gold mb-2">100%</div>
+                <div className="text-gray-600">Interactive</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Placeholder Stories Preview */}
+      {/* New Testament Stories Grid */}
       <section className="py-12 bg-gradient-to-b from-white to-blue-50">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-            Preview: Coming New Testament Stories
-          </h2>
-          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Preview cards for upcoming stories */}
-            {[
-              {
-                title: "The Annunciation",
-                artist: "Leonardo da Vinci",
-                book: "Luke 1",
-                description: "The angel Gabriel announces to Mary that she will bear the Son of God."
-              },
-              {
-                title: "The Nativity",
-                artist: "Gerard van Honthorst",
-                book: "Luke 2",
-                description: "The birth of Jesus Christ in Bethlehem, bringing light to the world."
-              },
-              {
-                title: "The Baptism of Christ",
-                artist: "Andrea del Verrocchio",
-                book: "Matthew 3",
-                description: "John the Baptist baptizes Jesus in the Jordan River."
-              },
-              {
-                title: "The Last Supper",
-                artist: "Leonardo da Vinci",
-                book: "Matthew 26",
-                description: "Jesus shares the Passover meal with his disciples before his crucifixion."
-              },
-              {
-                title: "The Crucifixion",
-                artist: "Diego Velázquez",
-                book: "John 19",
-                description: "Jesus gives his life on the cross for the salvation of humanity."
-              },
-              {
-                title: "The Resurrection",
-                artist: "Piero della Francesca",
-                book: "Matthew 28",
-                description: "Christ rises from the dead, conquering sin and death forever."
-              }
-            ].map((story, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden opacity-75"
+            {newTestamentStories.map((story) => (
+              <a
+                key={story.id}
+                href={`/story/${story.id}`}
+                className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden transform hover:-translate-y-2"
               >
-                {/* Placeholder Image */}
-                <div className="h-48 bg-gradient-to-br from-blue-200 to-purple-300 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <i className="fas fa-image text-4xl mb-2 opacity-50"></i>
-                    <p className="text-sm font-medium">Coming Soon</p>
-                  </div>
+                <div className="aspect-w-16 aspect-h-12 bg-gray-200">
+                  <img
+                    src={story.artwork.imageUrl}
+                    alt={`${story.artwork.title} by ${story.artwork.artist}`}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                  />
                 </div>
-
-                {/* Story Content */}
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-semibold text-biblical-blue bg-blue-100 px-2 py-1 rounded">
-                      {story.book}
-                    </span>
-                    <i className="fas fa-lock text-gray-400"></i>
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-biblical-blue transition-colors">
                     {story.title}
                   </h3>
-                  
-                  <p className="text-gray-600 text-sm mb-4">
-                    {story.description}
+                  <p className="text-biblical-purple font-semibold mb-2">
+                    {story.artwork.artist}
                   </p>
-
-                  {/* Artwork Info */}
-                  <div className="border-t pt-4">
-                    <p className="text-xs text-gray-500 mb-1">Featured Artwork:</p>
-                    <p className="text-sm font-medium text-gray-700">
-                      By {story.artist}
-                    </p>
+                  <p className="text-gray-600 text-sm mb-3">
+                    {story.book} {story.chapter}
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed mb-4">
+                    {story.summary}
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-gray-500">
+                      {story.artwork.date}
+                    </span>
+                    <div className="flex items-center text-biblical-blue font-semibold">
+                      <span className="text-sm">Explore Story</span>
+                      <i className="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -161,39 +133,13 @@ export const NewTestamentGallery = ({ stories }: NewTestamentGalleryProps) => {
         </div>
       </section>
 
-      {/* Newsletter Signup for Updates */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Get Notified When New Testament Stories Arrive
-            </h2>
-            <p className="text-gray-600 mb-8">
-              Be the first to know when we launch the complete New Testament gallery 
-              with interactive features and beautiful artwork.
-            </p>
-            <div className="flex max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-biblical-blue"
-              />
-              <button className="bg-biblical-blue text-white px-6 py-3 rounded-r-lg hover:bg-blue-700 transition-colors">
-                <i className="fas fa-bell"></i>
-              </button>
-            </div>
-            <p className="text-xs text-gray-500 mt-2">
-              We'll only send updates about new content. No spam, promise!
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-gray-400">
-            © 2024 Biblical Art Journey - New Testament Gallery (Coming Soon)
+            © 2024 Biblical Art Journey - New Testament Gallery
           </p>
         </div>
       </footer>
