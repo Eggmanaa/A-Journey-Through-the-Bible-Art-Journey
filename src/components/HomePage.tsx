@@ -80,7 +80,7 @@ export const HomePage = () => {
                 </div>
                 <div>
                   <h3 class="text-2xl font-bold text-gray-800 mb-3">Renaissance Masterpieces</h3>
-                  <p class="text-gray-600 text-lg">High-resolution artworks by Michelangelo, Rembrandt, Caravaggio, and other master artists with interactive zoom capabilities.</p>
+                  <p class="text-gray-600 text-lg">High-resolution artworks by Michelangelo, Rembrandt, Caravaggio, and other master artists with fullscreen viewing capability.</p>
                 </div>
               </div>
               
@@ -113,11 +113,11 @@ export const HomePage = () => {
                   class="rounded-xl shadow-2xl max-w-full h-auto transform hover:scale-105 transition-transform duration-500"
                 />
                 <div class="absolute -bottom-4 -right-4 bg-biblical-gold text-white p-4 rounded-full shadow-xl">
-                  <i class="fas fa-search-plus text-2xl"></i>
+                  <i class="fas fa-expand text-2xl"></i>
                 </div>
               </div>
               <p class="text-sm text-gray-500 mt-4 italic">
-                "The Creation of Adam" by Michelangelo - Interactive zoom available
+                "The Creation of Adam" by Michelangelo - Click for fullscreen view
               </p>
             </div>
           </div>
@@ -204,12 +204,12 @@ export const HomePage = () => {
           <div class="grid md:grid-cols-3 gap-12">
             <div class="text-center group">
               <div class="w-24 h-24 bg-gradient-to-br from-biblical-gold to-biblical-gold-dark rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                <i class="fas fa-search-plus text-white text-3xl"></i>
+                <i class="fas fa-expand text-white text-3xl"></i>
               </div>
-              <h3 class="text-2xl font-bold text-gray-800 mb-6">Zoom & Explore</h3>
+              <h3 class="text-2xl font-bold text-gray-800 mb-6">View & Explore</h3>
               <p class="text-gray-600 text-lg leading-relaxed">
-                Get up close with famous artworks using our enhanced zoom feature. 
-                Pan and explore every detail of Renaissance masterpieces.
+                View famous artworks in stunning high-resolution detail. 
+                Explore every brushstroke of Renaissance masterpieces.
               </p>
             </div>
             

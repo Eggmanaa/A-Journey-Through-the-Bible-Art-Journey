@@ -90,8 +90,8 @@ export const OldTestamentGallery = ({ stories }: OldTestamentGalleryProps) => {
                   <div className="flex items-center justify-between mt-4 pt-4 border-t">
                     <div className="flex space-x-2">
                       <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded flex items-center">
-                        <i className="fas fa-search-plus mr-1"></i>
-                        Zoom
+                        <i className="fas fa-expand mr-1"></i>
+                        View
                       </span>
                       <span className="text-xs bg-green-100 text-green-600 px-2 py-1 rounded flex items-center">
                         <i className="fas fa-palette mr-1"></i>
