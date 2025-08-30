@@ -23,18 +23,10 @@ function initializeApp() {
   initializeAccessibility();
 }
 
-// Enhanced Image Modal with Zoom and Pan
-let currentZoom = 1;
-let isDragging = false;
-let dragStartX = 0;
-let dragStartY = 0;
-let imageX = 0;
-let imageY = 0;
-let modalImage = null;
-
+// Simple Image Modal (fullscreen only, no zoom)
 function openImageModal(imageSrc, imageTitle = '') {
   const modal = document.getElementById('imageModal');
-  modalImage = document.getElementById('modalImage');
+  const modalImage = document.getElementById('modalImage');
   const titleElement = document.getElementById('imageTitle');
   
   if (modal && modalImage) {
@@ -45,20 +37,8 @@ function openImageModal(imageSrc, imageTitle = '') {
     modal.classList.add('flex');
     document.body.style.overflow = 'hidden';
     
-    // Reset zoom and position
-    resetZoom();
-    
     // Add event listeners
     document.addEventListener('keydown', handleModalKeydown);
-    modalImage.addEventListener('mousedown', startDrag);
-    modalImage.addEventListener('wheel', handleWheel);
-    document.addEventListener('mousemove', drag);
-    document.addEventListener('mouseup', endDrag);
-    
-    // Touch support for mobile
-    modalImage.addEventListener('touchstart', startTouchDrag);
-    modalImage.addEventListener('touchmove', touchDrag);
-    modalImage.addEventListener('touchend', endTouchDrag);
   }
 }
 
@@ -72,139 +52,21 @@ function closeImageModal() {
     
     // Remove event listeners
     document.removeEventListener('keydown', handleModalKeydown);
-    if (modalImage) {
-      modalImage.removeEventListener('mousedown', startDrag);
-      modalImage.removeEventListener('wheel', handleWheel);
-      modalImage.removeEventListener('touchstart', startTouchDrag);
-      modalImage.removeEventListener('touchmove', touchDrag);
-      modalImage.removeEventListener('touchend', endTouchDrag);
-    }
-    document.removeEventListener('mousemove', drag);
-    document.removeEventListener('mouseup', endDrag);
-    
-    // Reset state
-    currentZoom = 1;
-    isDragging = false;
-    imageX = 0;
-    imageY = 0;
   }
 }
 
 function handleModalKeydown(event) {
   if (event.key === 'Escape') {
     closeImageModal();
-  } else if (event.key === '+' || event.key === '=') {
-    event.preventDefault();
-    zoomIn();
-  } else if (event.key === '-') {
-    event.preventDefault();
-    zoomOut();
-  } else if (event.key === '0') {
-    event.preventDefault();
-    resetZoom();
   }
-}
-
-function zoomIn() {
-  currentZoom = Math.min(currentZoom * 1.2, 5);
-  updateImageTransform();
-}
-
-function zoomOut() {
-  currentZoom = Math.max(currentZoom / 1.2, 0.5);
-  updateImageTransform();
-}
-
-function resetZoom() {
-  currentZoom = 1;
-  imageX = 0;
-  imageY = 0;
-  updateImageTransform();
-}
-
-function updateImageTransform() {
-  if (modalImage) {
-    modalImage.style.transform = `translate(${imageX}px, ${imageY}px) scale(${currentZoom})`;
-    modalImage.style.cursor = currentZoom > 1 ? 'grab' : 'zoom-in';
-  }
-}
-
-// Mouse drag functionality
-function startDrag(event) {
-  if (currentZoom > 1) {
-    event.preventDefault();
-    isDragging = true;
-    dragStartX = event.clientX - imageX;
-    dragStartY = event.clientY - imageY;
-    modalImage.style.cursor = 'grabbing';
-  }
-}
-
-function drag(event) {
-  if (isDragging && currentZoom > 1) {
-    event.preventDefault();
-    imageX = event.clientX - dragStartX;
-    imageY = event.clientY - dragStartY;
-    updateImageTransform();
-  }
-}
-
-function endDrag() {
-  if (isDragging) {
-    isDragging = false;
-    modalImage.style.cursor = currentZoom > 1 ? 'grab' : 'zoom-in';
-  }
-}
-
-// Touch drag functionality for mobile
-let touchStartX = 0;
-let touchStartY = 0;
-
-function startTouchDrag(event) {
-  if (currentZoom > 1 && event.touches.length === 1) {
-    event.preventDefault();
-    isDragging = true;
-    const touch = event.touches[0];
-    touchStartX = touch.clientX - imageX;
-    touchStartY = touch.clientY - imageY;
-  }
-}
-
-function touchDrag(event) {
-  if (isDragging && currentZoom > 1 && event.touches.length === 1) {
-    event.preventDefault();
-    const touch = event.touches[0];
-    imageX = touch.clientX - touchStartX;
-    imageY = touch.clientY - touchStartY;
-    updateImageTransform();
-  }
-}
-
-function endTouchDrag() {
-  isDragging = false;
-}
-
-// Mouse wheel zoom
-function handleWheel(event) {
-  event.preventDefault();
-  const delta = event.deltaY > 0 ? -1 : 1;
-  const zoomFactor = 1.1;
-  
-  if (delta > 0) {
-    currentZoom = Math.min(currentZoom * zoomFactor, 5);
-  } else {
-    currentZoom = Math.max(currentZoom / zoomFactor, 0.5);
-  }
-  
-  updateImageTransform();
 }
 
 function initializeImageModals() {
-  // Add click handlers to all zoomable images
-  const zoomableImages = document.querySelectorAll('[data-zoomable]');
-  zoomableImages.forEach(img => {
-    img.addEventListener('click', () => openImageModal(img.src));
-    img.style.cursor = 'zoom-in';
+  // Add click handlers to all artwork images
+  const artworkImages = document.querySelectorAll('[data-artwork]');
+  artworkImages.forEach(img => {
+    img.addEventListener('click', () => openImageModal(img.src, img.alt));
+    img.style.cursor = 'pointer';
   });
 }
 
@@ -429,7 +291,7 @@ function addSkipLinks() {
 
 function enhanceKeyboardNavigation() {
   // Add keyboard support to interactive elements
-  const interactiveElements = document.querySelectorAll('.hotspot, [data-zoomable]');
+  const interactiveElements = document.querySelectorAll('.hotspot, [data-artwork]');
   
   interactiveElements.forEach(element => {
     if (!element.hasAttribute('tabindex')) {
@@ -646,8 +508,5 @@ window.addEventListener('resize', throttledResize);
 // Export functions for global use
 window.openImageModal = openImageModal;
 window.closeImageModal = closeImageModal;
-window.zoomIn = zoomIn;
-window.zoomOut = zoomOut;
-window.resetZoom = resetZoom;
 window.markStoryCompleted = markStoryCompleted;
 window.toggleFavoriteStory = toggleFavoriteStory;

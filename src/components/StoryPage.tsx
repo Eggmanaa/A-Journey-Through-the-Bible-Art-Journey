@@ -95,12 +95,12 @@ export const StoryPage = ({ story }: StoryPageProps) => {
                   <img 
                     src={story.artwork.imageUrl} 
                     alt={story.artwork.title}
-                    class="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-zoom-in"
+                    class="w-full rounded-lg shadow-xl hover:shadow-2xl transition-shadow cursor-pointer"
                     onclick={`openImageModal('${story.artwork.imageUrl}', '${story.artwork.title}')`}
                   />
                   <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                    <i className="fas fa-search-plus mr-1"></i>
-                    Click to zoom
+                    <i className="fas fa-expand mr-1"></i>
+                    Click to view fullscreen
                   </div>
                 </div>
                 
@@ -108,7 +108,7 @@ export const StoryPage = ({ story }: StoryPageProps) => {
                 <div className="mt-4 grid grid-cols-2 gap-4">
                   <button className="flex items-center justify-center p-3 bg-blue-100 text-blue-700 rounded-lg hover:bg-blue-200 transition-colors">
                     <i className="fas fa-eye mr-2"></i>
-                    Look Closer Details
+                    View Details
                   </button>
                   <button className="flex items-center justify-center p-3 bg-green-100 text-green-700 rounded-lg hover:bg-green-200 transition-colors">
                     <i className="fas fa-info-circle mr-2"></i>
@@ -225,7 +225,7 @@ export const StoryPage = ({ story }: StoryPageProps) => {
               {/* Look Closer */}
               <div className="bg-blue-50 rounded-lg p-6">
                 <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center">
-                  <i className="fas fa-search-plus mr-2"></i>
+                  <i className="fas fa-eye mr-2"></i>
                   Look Closer
                 </h3>
                 <ul className="space-y-2">
@@ -308,7 +308,7 @@ export const StoryPage = ({ story }: StoryPageProps) => {
         </div>
       </div>
 
-      {/* Enhanced Image Modal with Zoom and Pan */}
+      {/* Simple Fullscreen Image Modal */}
       <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center">
         <div class="relative w-full h-full flex items-center justify-center">
           {/* Close button */}
@@ -319,40 +319,13 @@ export const StoryPage = ({ story }: StoryPageProps) => {
             <i class="fas fa-times"></i>
           </button>
           
-          {/* Zoom controls */}
-          <div class="absolute top-4 left-4 flex flex-col space-y-2 z-60">
-            <button 
-              onclick="zoomIn()" 
-              class="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-all"
-              title="Zoom In"
-            >
-              <i class="fas fa-plus"></i>
-            </button>
-            <button 
-              onclick="zoomOut()" 
-              class="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-all"
-              title="Zoom Out"
-            >
-              <i class="fas fa-minus"></i>
-            </button>
-            <button 
-              onclick="resetZoom()" 
-              class="bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition-all"
-              title="Reset View"
-            >
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
-          </div>
-          
           {/* Image container */}
-          <div id="imageContainer" class="w-full h-full overflow-hidden flex items-center justify-center">
+          <div id="imageContainer" class="w-full h-full flex items-center justify-center p-8">
             <img 
               id="modalImage" 
               src="" 
               alt="" 
-              class="max-w-none h-auto cursor-grab transition-transform duration-200 ease-out"
-              style="transform-origin: center center;"
-              draggable="false"
+              class="max-w-full max-h-full object-contain"
             />
           </div>
           
@@ -360,7 +333,7 @@ export const StoryPage = ({ story }: StoryPageProps) => {
           <div id="imageInfo" class="absolute bottom-4 left-4 right-4 text-center">
             <div class="bg-black bg-opacity-50 text-white p-3 rounded-lg">
               <h3 id="imageTitle" class="font-bold text-lg mb-1"></h3>
-              <p class="text-sm opacity-90">Click and drag to pan • Use zoom controls or mouse wheel • ESC to close</p>
+              <p class="text-sm opacity-90">Press ESC to close</p>
             </div>
           </div>
         </div>
